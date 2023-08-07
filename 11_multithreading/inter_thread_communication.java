@@ -2,6 +2,20 @@
  * 	Producer - Consumer problem for inter thread communication.
  */
 
+class inter_thread_communication {
+
+	public static void main(String ...args) {
+
+		MyData data = new MyData();
+
+		Producer p = new Producer(data);
+		Consumer c = new Consumer(data);
+
+		p.start();
+		c.start();
+	}
+}
+
 class MyData {
 
 	int value;
@@ -67,16 +81,4 @@ class Consumer extends Thread {
 	}
 }
 
-class inter_thread_communication {
 
-	public static void main(String ...args) {
-
-		MyData data = new MyData();
-
-		Producer p = new Producer(data);
-		Consumer c = new Consumer(data);
-
-		p.start();
-		c.start();
-	}
-}
