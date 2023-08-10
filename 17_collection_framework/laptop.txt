@@ -1,0 +1,6 @@
+#Laptop
+#Thu Aug 10 22:12:02 IST 2023
+Brand=Asus
+Processor=Ryzen7
+OS=Linux
+Model=Zenbook
